@@ -275,8 +275,8 @@ const editProject = (id) => {
         return;
     } else {
         inputProjectName.value = projectTarget.projectName;
-        inputStartDate.value = projectTarget.startDate;
-        inputEndDate.value = projectTarget.endDate;
+        // inputStartDate.value = projectTarget.startDate;
+        // inputEndDate.value = projectTarget.endDate;
         inputProjectDesc.value = projectTarget.projectDesc;
         inputUseNodeJS.checked = projectTarget.useNodeJS;
         inputUseNextJS.checked = projectTarget.useNextJS;
