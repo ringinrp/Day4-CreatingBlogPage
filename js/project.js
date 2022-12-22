@@ -217,55 +217,55 @@ const findProjectIndex = (projectId) => {
 };
 
 // calculate duration
-const getDurationTime = (startDate, endDate) => {
-    const date1 = new Date(startDate);
-    const date2 = new Date(endDate);
-    const diffDate = Math.abs(date2 - date1);
-    const projectDuration = Math.floor(diffDate / (1000 * 3600 * 24));
+// const getDurationTime = (startDate, endDate) => {
+//     const date1 = new Date(startDate);
+//     const date2 = new Date(endDate);
+//     const diffDate = Math.abs(date2 - date1);
+//     const projectDuration = Math.floor(diffDate / (1000 * 3600 * 24));
 
-    let calculateDuration = "";
-    let durationTotal = "";
+//     let calculateDuration = "";
+//     let durationTotal = "";
 
-    if (projectDuration > 30) {
-        // not calculate correctly
-        calculateDuration = Math.round(projectDuration / 30);
-        durationTotal = `${calculateDuration} month(s)`;
-    } else {
-        durationTotal = `${projectDuration} day(s)`;
-    }
-    return durationTotal;
-};
+//     if (projectDuration > 30) {
+//         // not calculate correctly
+//         calculateDuration = Math.round(projectDuration / 30);
+//         durationTotal = `${calculateDuration} month(s)`;
+//     } else {
+//         durationTotal = `${projectDuration} day(s)`;
+//     }
+//     return durationTotal;
+// };
 
 // generate creation date
-const getCreationDate = (startDate) => {
-    const dateCreation = new Date(startDate);
+// const getCreationDate = (startDate) => {
+//     const dateCreation = new Date(startDate);
 
-    let createdDate = dateCreation.getDate();
-    let createdMonth = dateCreation.getMonth();
-    let createdYear = dateCreation.getFullYear();
+//     let createdDate = dateCreation.getDate();
+//     let createdMonth = dateCreation.getMonth();
+//     let createdYear = dateCreation.getFullYear();
 
-    const arrayMonth = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-    ];
+//     const arrayMonth = [
+//         "January",
+//         "February",
+//         "March",
+//         "April",
+//         "June",
+//         "July",
+//         "August",
+//         "September",
+//         "October",
+//         "November",
+//         "December",
+//     ];
 
-    for (let i = 0; i < arrayMonth.length; i++) {
-        if (createdMonth - 1 === i) {
-            createdMonth = arrayMonth[i];
-        }
-    }
+//     for (let i = 0; i < arrayMonth.length; i++) {
+//         if (createdMonth - 1 === i) {
+//             createdMonth = arrayMonth[i];
+//         }
+//     }
 
-    return createdDate + " " + createdMonth + " " + createdYear;
-};
+//     return createdDate + " " + createdMonth + " " + createdYear;
+// };
 
 // edit project
 const editProject = (id) => {
