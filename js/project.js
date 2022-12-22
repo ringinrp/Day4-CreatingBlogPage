@@ -5,8 +5,8 @@ const STORAGE_KEY = "project-data";
 
 const inputProject = document.getElementById("project-input");
 const inputProjectName = document.getElementById("project-name");
-const inputStartDate = document.getElementById("date-start");
-const inputEndDate = document.getElementById("date-end");
+// const inputStartDate = document.getElementById("date-start");
+// const inputEndDate = document.getElementById("date-end");
 const inputProjectDesc = document.getElementById("project-description");
 const inputUseNodeJS = document.getElementById("node-js");
 const inputUseReactJS = document.getElementById("react-js");
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const addProject = () => {
     const id = generateID();
     const projectName = inputProjectName.value;
-    const startDate = inputStartDate.value;
-    const endDate = inputEndDate.value;
+    // const startDate = inputStartDate.value;
+    // const endDate = inputEndDate.value;
     const projectDesc = inputProjectDesc.value;
     const useNodeJS = inputUseNodeJS.checked;
     const useReactJS = inputUseReactJS.checked;
@@ -43,8 +43,8 @@ const addProject = () => {
     const project = {
         id,
         projectName,
-        startDate,
-        endDate,
+        // startDate,
+        // endDate,
         projectDesc,
         useNodeJS,
         useReactJS,
@@ -74,8 +74,8 @@ const createProjectItem = (project) => {
     const {
         id,
         projectName,
-        startDate,
-        endDate,
+        // startDate,
+        // endDate,
         projectDesc,
         useNodeJS,
         useReactJS,
@@ -134,7 +134,7 @@ const createProjectItem = (project) => {
     actionBtn.classList.add("action-btn");
 
     const editBtn = document.createElement("button");
-    editBtn.classList.add("btn", "btn-primary");
+    editBtn.classList.add("btn", "btn-primary", "btn-card");
     editBtn.innerText = "edit";
     editBtn.addEventListener("click", () => {
         editProject(id);

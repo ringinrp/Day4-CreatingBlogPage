@@ -45,9 +45,10 @@ nav ul li a:hover {
 
 .button-contact {
     border: none;
-    padding: 10px;
-    background-color: orangered;
-    border-radius: 10px;
+    background-color: black;
+    font-size: 15px;
+    padding: 10px ;
+    border-radius:10px;
 }
 
 .button-contact a {
