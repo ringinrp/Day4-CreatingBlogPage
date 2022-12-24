@@ -197,7 +197,7 @@ const deleteProject = (id) => {
         return;
     }
 
-    if (confirm("do you want to delete this project?") === true) {
+    if (confirm("Apakah kamu ingin menghapus project ini?") === true) {
         dataProject.splice(projectTarget, 1);
         document.dispatchEvent(new Event(RENDER_EVENT));
         saveData();
